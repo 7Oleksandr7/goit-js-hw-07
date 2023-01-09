@@ -1,9 +1,9 @@
 import { galleryItems } from "./gallery-items.js";
 
-const galleryContainer = document.querySelector(".gallery");
+const galleryList = document.querySelector(".gallery");
 const itemsMarkup = createItemsMarkup(galleryItems);
 
-galleryContainer.insertAdjacentHTML("beforeend", itemsMarkup);
+galleryList.insertAdjacentHTML("beforeend", itemsMarkup);
 
 function createItemsMarkup(galleryItems) {
   return galleryItems
